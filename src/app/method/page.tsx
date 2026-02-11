@@ -7,83 +7,83 @@ import { Button } from "@/components/ui/Button";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Method — Nomads",
+  title: "The Method — Scale.digital",
   description:
-    "The Conversion Curve: 8 stages of acquisition infrastructure. Understand the system that produces predictable pipeline.",
+    "The Revenue Engine: 8 stages of acquisition infrastructure. See the system that produces predictable, scalable pipeline for agencies and consultants.",
 };
 
 const stages = [
   {
     number: "01",
     title: "Offer Architecture",
-    body: "Everything starts here. Your offer is not what you sell. It is the articulation of what someone is buying — the transformation, the outcome, the shift.",
+    body: "Everything starts here. Your offer is not your service description. It is the articulation of the transformation your client is buying — the outcome, the shift, the result they can't get anywhere else.",
     detail:
-      "Most businesses describe their service. That is not an offer. An offer articulates why someone should choose you, now, at this price point, over every alternative including doing nothing.",
+      "Most agencies describe what they do. That's not an offer. An offer answers: why should someone choose you, now, at this price, over every alternative — including doing nothing?",
     warning:
-      "No amount of traffic, creative, or sales skill compensates for a weak offer. You can drive 10,000 visitors. If the offer doesn't resonate, nothing converts.",
+      "No amount of traffic, creative, or sales talent compensates for a weak offer. You can drive 10,000 visitors. If the offer doesn't resonate, nothing converts.",
   },
   {
     number: "02",
     title: "Market Signal Clarity",
-    body: "Who is this for? Not demographics. Psychographics. Behavioral signals. What is happening in their business right now that makes them ready for this offer?",
+    body: "Who exactly is this for? Not demographics. Behavioral signals. What is happening in their business right now that makes them ready to buy?",
     detail:
-      "Market clarity is not about casting a wider net. It is about knowing exactly which fish you're catching and where they swim.",
+      "Market clarity isn't about casting a wider net. It's about knowing exactly which clients you're targeting and what triggers their buying decision.",
     warning:
-      "You attract the wrong people. Lead quality is low. Sales calls feel like convincing rather than qualifying. Close rates suffer.",
+      "You attract the wrong people. Lead quality is low. Sales calls feel like convincing rather than qualifying. Close rates suffer across the board.",
   },
   {
     number: "03",
     title: "Creative Infrastructure",
-    body: "Creative is the bridge between your offer and your market. Ads, content, messaging — each piece must communicate the offer to the right market in a way that earns attention and builds intent.",
+    body: "Creative is the bridge between your offer and your market. Ads, content, messaging — each piece must communicate the right offer to the right people in a way that earns attention and builds buying intent.",
     detail:
-      "This is where most businesses start. And it is exactly why they fail. Creative without offer architecture and market clarity is noise.",
+      "This is where most agencies start spending. And it's exactly why they fail. Creative without offer architecture and market clarity is just expensive noise.",
     warning:
-      "Ads don't perform. Content doesn't engage. The message feels generic. You look like everyone else in the market.",
+      "Ads don't perform. Content doesn't engage. Your messaging feels generic. You look and sound like every other agency in the market.",
   },
   {
     number: "04",
     title: "Traffic Protocols",
-    body: "Traffic is a volume dial. It amplifies whatever exists upstream. If your offer is strong and your creative is clear, traffic scales results. If not, it scales waste.",
+    body: "Traffic is a volume dial. It amplifies whatever exists upstream. If your offer is dialled in and your creative is clear, traffic scales revenue. If not, it scales waste.",
     detail:
-      "We install traffic systems, not campaigns. Systems produce consistent volume regardless of platform changes, algorithm shifts, or creative fatigue.",
+      "We install traffic systems, not campaigns. Systems produce consistent volume regardless of platform algorithm changes, creative fatigue, or seasonal dips.",
     warning:
-      "Volume is inconsistent. You ride platform algorithms instead of controlling them. One bad month can destabilize the entire business.",
+      "Volume is unpredictable. You're riding platform algorithms instead of controlling them. One bad month destabilizes the entire business.",
   },
   {
     number: "05",
     title: "Capture Engineering",
-    body: "Getting attention is not enough. You need to capture intent. Landing pages, lead magnets, booking flows — each touchpoint must convert attention into committed action.",
+    body: "Attention is worthless unless you capture intent. Landing pages, lead magnets, booking flows — each touchpoint must convert attention into a committed next step.",
     detail:
-      "This is funnel engineering. Not pages. Not templates. Engineered conversion environments designed for a specific audience at a specific stage of awareness.",
+      "This is funnel engineering. Not templates. Not page builders. Engineered conversion environments designed for a specific audience at a specific stage of awareness.",
     warning:
-      "You pay for attention but don't convert it. High traffic, low opt-in rates. Your cost per lead is too high to sustain.",
+      "You pay for clicks but don't convert them. High traffic, low opt-in rates. Your cost per lead is too high to sustain at scale.",
   },
   {
     number: "06",
     title: "Nurture Sequences",
-    body: "Most leads are not ready to buy when they first encounter you. Nurture is the system that moves them from awareness to intent. Email, retargeting, content sequences.",
+    body: "Most leads aren't ready to buy the moment they find you. Nurture is the system that moves them from awareness to intent — email, retargeting, content sequences that build trust over time.",
     detail:
-      "The most underinvested stage in almost every business we audit. Companies spend thousands driving traffic and then let 80% of leads go cold.",
+      "The most underinvested stage in nearly every business we audit. Companies spend thousands driving traffic, then let 80% of leads go completely cold.",
     warning:
-      "You only close the hottest leads. Your pipeline is thin. Revenue depends on timing rather than systems. Enormous waste of upstream investment.",
+      "You only close the hottest leads. Your pipeline is razor thin. Revenue depends on lucky timing rather than systematic follow-up.",
   },
   {
     number: "07",
     title: "Sales System",
-    body: "Sales is not convincing. If your system works, sales is qualification. The prospect arrives educated, pre-sold, and ready. The call is about fit, not persuasion.",
+    body: "If the upstream stages work, sales becomes qualification, not persuasion. The prospect arrives educated, pre-sold, and ready. The call is about fit, not convincing.",
     detail:
-      "When founders complain about close rates, the problem is almost never the closer. It is the stages upstream that failed to qualify and nurture properly.",
+      "When founders complain about close rates, the problem is almost never the closer. It's the upstream stages that failed to qualify and nurture properly.",
     warning:
-      "Close rates are low. No-show rates are high. Sales calls feel adversarial. The founder is still the only one who can close.",
+      "Close rates are low. No-show rates are high. Sales calls feel adversarial. The founder is still the only one who can reliably close.",
   },
   {
     number: "08",
     title: "Retention Architecture",
-    body: "Acquisition doesn't end at the close. Retention is the final stage. Client lifetime value, referral systems, expansion revenue — this is where profitable growth compounds.",
+    body: "Acquisition doesn't end at the close. Client lifetime value, referral systems, expansion revenue — this is where profitable growth compounds over time.",
     detail:
-      "Without retention architecture, you are constantly refilling a leaking bucket. Every new client simply replaces a lost one. Growth is a treadmill, not a flywheel.",
+      "Without retention architecture, you're constantly refilling a leaking bucket. Every new client simply replaces a lost one. Growth is a treadmill, not a flywheel.",
     warning:
-      "Client churn is high. LTV is low. Acquisition costs can never be recouped. The business works hard and stays in the same place.",
+      "Client churn is high. LTV is low. Acquisition costs can't be recouped. The business works harder every month just to stay in the same place.",
   },
 ];
 
@@ -96,23 +96,23 @@ export default function MethodPage() {
           <RevealOnScroll>
             <CheckpointHeader label="The Method" />
             <SectionHeading as="h1" size="hero">
-              The Conversion Curve.
+              The Revenue Engine.
             </SectionHeading>
-            <p className="text-xl leading-relaxed text-gray-900 font-medium mb-8">
+            <p className="text-xl leading-relaxed text-slate-300 font-medium mb-8">
               8 stages. One connected system. Every stage depends on the one
               before it. Skip one, everything downstream breaks.
             </p>
             <BodyCopy secondary>
-              This is not a framework we invented to sound clever. It is a map
-              of how acquisition actually works when you remove the noise, the
-              hype, and the tactical shortcuts.
+              This isn&rsquo;t a framework we invented to sound clever. It&rsquo;s a
+              map of how acquisition actually works when you strip away the
+              noise, the hype, and the tactical shortcuts.
             </BodyCopy>
           </RevealOnScroll>
         </div>
       </section>
 
       {/* Stages Deep Dive */}
-      <section className="py-20 border-t border-gray-200">
+      <section className="py-20 border-t border-navy-800">
         <div className="container-narrow">
           {stages.map((stage) => (
             <RevealOnScroll
@@ -120,7 +120,7 @@ export default function MethodPage() {
               className="mb-20 last:mb-12"
             >
               <CheckpointHeader label={`Stage ${stage.number}`} />
-              <h2 className="font-display text-2xl font-bold leading-tight mb-6">
+              <h2 className="font-display text-2xl font-bold leading-tight text-white mb-6">
                 {stage.title}
               </h2>
               <BodyCopy>{stage.body}</BodyCopy>
@@ -135,22 +135,22 @@ export default function MethodPage() {
       </section>
 
       {/* Summary */}
-      <section className="py-20 border-t border-gray-200">
+      <section className="py-20 border-t border-navy-800">
         <div className="container-narrow">
           <RevealOnScroll>
             <SectionHeading>The system is the strategy.</SectionHeading>
             <BodyCopy>
               There is no silver bullet. No single tactic that transforms a
-              business. There is only the system. 8 stages. Connected.
-              Sequential. Each supporting the next.
+              business. There is only the system &mdash; 8 stages, connected,
+              sequential, each supporting the next.
             </BodyCopy>
             <BodyCopy secondary>
-              When we diagnose your business, we are not looking for a quick fix.
-              We are mapping which stages are functional, which are broken, and
-              which don&rsquo;t exist yet. Then we build.
+              When we diagnose your business, we map which stages are
+              functional, which are broken, and which don&rsquo;t exist yet.
+              Then we build what&rsquo;s missing.
             </BodyCopy>
             <div className="mt-10">
-              <Button href="/apply">Get Your Diagnosis</Button>
+              <Button href="/apply">Get Your Free Diagnosis</Button>
             </div>
           </RevealOnScroll>
         </div>

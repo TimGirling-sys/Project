@@ -14,7 +14,7 @@ export function BodyCopy({
   return (
     <p
       className={`text-lg leading-relaxed mb-6 ${
-        secondary ? "text-gray-600" : "text-gray-900"
+        secondary ? "text-navy-300" : "text-slate-200"
       } ${className}`}
     >
       {children}

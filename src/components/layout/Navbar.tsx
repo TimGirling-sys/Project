@@ -7,13 +7,13 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-950/95 backdrop-blur-sm border-b border-navy-800">
       <div className="max-w-wide mx-auto px-5 md:px-6 py-4 flex items-center justify-between">
         <Link
           href="/"
-          className="font-display text-lg font-bold tracking-tight text-gray-900"
+          className="font-display text-lg font-bold tracking-tight text-white"
         >
-          NOMADS
+          Scale<span className="text-accent">.</span>digital
         </Link>
 
         {/* Mobile toggle */}
@@ -25,13 +25,13 @@ export function Navbar() {
         >
           <div className="space-y-1">
             <span
-              className={`block w-5 h-0.5 bg-black transition-all ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}
+              className={`block w-5 h-0.5 bg-white transition-all ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}
             />
             <span
-              className={`block w-5 h-0.5 bg-black transition-all ${isOpen ? "opacity-0" : ""}`}
+              className={`block w-5 h-0.5 bg-white transition-all ${isOpen ? "opacity-0" : ""}`}
             />
             <span
-              className={`block w-5 h-0.5 bg-black transition-all ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}
+              className={`block w-5 h-0.5 bg-white transition-all ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}
             />
           </div>
         </button>
@@ -41,7 +41,7 @@ export function Navbar() {
           <li>
             <Link
               href="/method"
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors tracking-wide"
+              className="text-sm font-medium text-navy-300 hover:text-white transition-colors tracking-wide"
             >
               Method
             </Link>
@@ -49,37 +49,37 @@ export function Navbar() {
           <li>
             <Link
               href="/routes"
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors tracking-wide"
+              className="text-sm font-medium text-navy-300 hover:text-white transition-colors tracking-wide"
             >
-              Routes
+              Packages
             </Link>
           </li>
           <li>
             <Link
               href="/#qualification"
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors tracking-wide"
+              className="text-sm font-medium text-navy-300 hover:text-white transition-colors tracking-wide"
             >
-              Who This Is For
+              Is This For Me?
             </Link>
           </li>
           <li>
             <Link
               href="/apply"
-              className="text-sm font-semibold text-white bg-black px-5 py-2 hover:bg-gray-800 transition-colors"
+              className="text-sm font-semibold text-navy-950 bg-accent px-5 py-2 hover:bg-accent-hover transition-colors"
             >
-              Apply
+              Get Started
             </Link>
           </li>
         </ul>
 
         {/* Mobile nav */}
         {isOpen && (
-          <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 md:hidden">
+          <div className="absolute top-full left-0 right-0 bg-navy-950 border-b border-navy-800 md:hidden">
             <ul className="flex flex-col gap-4 p-6">
               <li>
                 <Link
                   href="/method"
-                  className="text-sm font-medium text-gray-600"
+                  className="text-sm font-medium text-navy-300"
                   onClick={() => setIsOpen(false)}
                 >
                   Method
@@ -88,28 +88,28 @@ export function Navbar() {
               <li>
                 <Link
                   href="/routes"
-                  className="text-sm font-medium text-gray-600"
+                  className="text-sm font-medium text-navy-300"
                   onClick={() => setIsOpen(false)}
                 >
-                  Routes
+                  Packages
                 </Link>
               </li>
               <li>
                 <Link
                   href="/#qualification"
-                  className="text-sm font-medium text-gray-600"
+                  className="text-sm font-medium text-navy-300"
                   onClick={() => setIsOpen(false)}
                 >
-                  Who This Is For
+                  Is This For Me?
                 </Link>
               </li>
               <li>
                 <Link
                   href="/apply"
-                  className="inline-block text-sm font-semibold text-white bg-black px-5 py-2"
+                  className="inline-block text-sm font-semibold text-navy-950 bg-accent px-5 py-2"
                   onClick={() => setIsOpen(false)}
                 >
-                  Apply
+                  Get Started
                 </Link>
               </li>
             </ul>

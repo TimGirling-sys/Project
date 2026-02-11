@@ -4,15 +4,15 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Nomads — Predictable Growth Systems for Agencies",
+  title: "Scale.digital — Acquisition Systems That Scale With You",
   description:
-    "Nomads builds calm, predictable growth systems for companies scaling globally. We create acquisition engines that work across borders.",
+    "Scale.digital installs predictable acquisition systems for agencies, coaches, and consultants scaling from $10K to $100K/month. Infrastructure, not tactics.",
   keywords:
-    "growth agency, marketing agency, acquisition systems, global scaling, funnel optimization",
+    "acquisition systems, agency scaling, lead generation, growth infrastructure, predictable revenue, consultants, coaches",
   openGraph: {
-    title: "Nomads — Calm, Predictable Growth Systems",
+    title: "Scale.digital — Predictable Revenue. Engineered.",
     description:
-      "Nomads builds calm, predictable growth systems for companies scaling globally. We create acquisition engines that work across borders.",
+      "We install complete acquisition systems for agencies and consultants scaling from $10K to $100K/month. Infrastructure, not tactics.",
     type: "website",
   },
 };

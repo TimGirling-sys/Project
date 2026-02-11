@@ -10,11 +10,11 @@
   }
 
   body {
-    @apply font-body text-gray-900 bg-white;
+    @apply font-body text-slate-100 bg-navy-950;
   }
 
   ::selection {
-    @apply bg-gray-900 text-white;
+    @apply bg-accent text-navy-950;
   }
 }
 

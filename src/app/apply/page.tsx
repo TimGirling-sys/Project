@@ -22,40 +22,41 @@ export default function ApplyPage() {
       <section className="pt-32 pb-12">
         <div className="container-narrow">
           <RevealOnScroll>
-            <CheckpointHeader label="Application" />
+            <CheckpointHeader label="Get Started" />
             <SectionHeading as="h1" size="section">
-              Start with diagnosis.
+              Start with a free diagnosis.
             </SectionHeading>
             <BodyCopy secondary>
-              Every engagement begins with a strategy call. We map your current
-              Conversion Curve, identify the failure point, and determine if we
-              can help. No pitch. No pressure. Just clarity.
+              Every engagement begins with a strategy call. We map your Revenue
+              Engine, identify the failure point, and determine if we can help.
+              No pitch. No pressure. Just clarity on what&rsquo;s broken and
+              what to build.
             </BodyCopy>
             <PatternBlock
               label="What happens next"
-              text="Submit your application → We review within 48 hours → If qualified, we schedule a diagnosis call → You receive a system proposal within 5 business days."
+              text="Submit your application → We review within 48 hours → If qualified, we schedule your free diagnosis call → You receive a system proposal within 5 business days."
             />
           </RevealOnScroll>
         </div>
       </section>
 
       {/* Form */}
-      <section className="py-20 border-t border-gray-200">
+      <section className="py-20 border-t border-navy-800">
         <div className="container-narrow">
           <RevealOnScroll>
-            <h2 className="font-display text-2xl font-bold mb-8">
+            <h2 className="font-display text-2xl font-bold text-white mb-8">
               Your details
             </h2>
 
             {submitted ? (
-              <div className="p-8 bg-gray-50 border-l-[3px] border-gray-900">
-                <h3 className="font-display text-xl font-bold mb-3">
+              <div className="p-8 bg-navy-900 border-l-[3px] border-accent">
+                <h3 className="font-display text-xl font-bold text-white mb-3">
                   Application received.
                 </h3>
-                <p className="text-base leading-relaxed text-gray-600">
+                <p className="text-base leading-relaxed text-navy-300">
                   We review every application within 48 hours. If
                   qualified, you&rsquo;ll receive a calendar link for your
-                  diagnosis call. Check your inbox.
+                  free diagnosis call. Check your inbox.
                 </p>
               </div>
             ) : (
@@ -63,7 +64,7 @@ export default function ApplyPage() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide"
+                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
                   >
                     Full Name
                   </label>
@@ -73,14 +74,14 @@ export default function ApplyPage() {
                     name="name"
                     required
                     placeholder="Your full name"
-                    className="w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 outline-none focus:border-gray-400 transition-colors"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide"
+                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
                   >
                     Email Address
                   </label>
@@ -90,30 +91,30 @@ export default function ApplyPage() {
                     name="email"
                     required
                     placeholder="you@company.com"
-                    className="w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 outline-none focus:border-gray-400 transition-colors"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="company"
-                    className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide"
+                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
                   >
-                    Company Name
+                    Company / Business Name
                   </label>
                   <input
                     type="text"
                     id="company"
                     name="company"
                     placeholder="Your company"
-                    className="w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 outline-none focus:border-gray-400 transition-colors"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="website"
-                    className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide"
+                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
                   >
                     Website URL
                   </label>
@@ -122,14 +123,14 @@ export default function ApplyPage() {
                     id="website"
                     name="website"
                     placeholder="https://yourcompany.com"
-                    className="w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 outline-none focus:border-gray-400 transition-colors"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="revenue"
-                    className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide"
+                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
                   >
                     Current Monthly Revenue
                   </label>
@@ -138,7 +139,7 @@ export default function ApplyPage() {
                     name="revenue"
                     required
                     defaultValue=""
-                    className="w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 outline-none focus:border-gray-400 transition-colors appearance-none"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none"
                   >
                     <option value="" disabled>
                       Select your range
@@ -154,7 +155,7 @@ export default function ApplyPage() {
                 <div>
                   <label
                     htmlFor="business-type"
-                    className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide"
+                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
                   >
                     Business Type
                   </label>
@@ -163,7 +164,7 @@ export default function ApplyPage() {
                     name="business-type"
                     required
                     defaultValue=""
-                    className="w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 outline-none focus:border-gray-400 transition-colors appearance-none"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none"
                   >
                     <option value="" disabled>
                       Select your type
@@ -179,28 +180,28 @@ export default function ApplyPage() {
                 <div>
                   <label
                     htmlFor="route"
-                    className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide"
+                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
                   >
-                    Which deployment route interests you?
+                    Which package interests you?
                   </label>
                   <select
                     id="route"
                     name="route"
                     defaultValue=""
-                    className="w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 outline-none focus:border-gray-400 transition-colors appearance-none"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none"
                   >
                     <option value="" disabled>
-                      Select a route (optional)
+                      Select a package (optional)
                     </option>
-                    <option value="basecamp">
-                      Basecamp — Foundation Installation
+                    <option value="launchpad">
+                      Launchpad — Foundation Build
                     </option>
-                    <option value="summit">
-                      Summit — Scaling Infrastructure
+                    <option value="accelerate">
+                      Accelerate — Scale Infrastructure
                     </option>
-                    <option value="compass">Compass — Market Expansion</option>
-                    <option value="expedition">
-                      Expedition — Full System Overhaul
+                    <option value="expand">Expand — Market Expansion</option>
+                    <option value="overhaul">
+                      Overhaul — Full System Rebuild
                     </option>
                     <option value="unsure">Not sure yet</option>
                   </select>
@@ -209,28 +210,28 @@ export default function ApplyPage() {
                 <div>
                   <label
                     htmlFor="challenge"
-                    className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide"
+                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
                   >
-                    What is your biggest acquisition challenge right now?
+                    What is your biggest growth challenge right now?
                   </label>
                   <textarea
                     id="challenge"
                     name="challenge"
                     required
                     rows={5}
-                    placeholder="Describe your current situation. What's working? What's broken? What have you tried?"
-                    className="w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 outline-none focus:border-gray-400 transition-colors resize-y min-h-[140px]"
+                    placeholder="Tell us about your current situation. Where are leads coming from? What's working? What's broken? What have you already tried?"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors resize-y min-h-[140px] placeholder:text-navy-500"
                   />
-                  <p className="text-sm text-gray-500 mt-2">
-                    Be specific. The more detail you provide, the more useful our
-                    diagnosis call will be.
+                  <p className="text-sm text-navy-400 mt-2">
+                    The more specific you are, the more useful your diagnosis
+                    call will be.
                   </p>
                 </div>
 
                 <div>
                   <label
                     htmlFor="timeline"
-                    className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide"
+                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
                   >
                     When are you looking to start?
                   </label>
@@ -238,7 +239,7 @@ export default function ApplyPage() {
                     id="timeline"
                     name="timeline"
                     defaultValue=""
-                    className="w-full px-4 py-3 text-base text-gray-900 bg-white border border-gray-200 outline-none focus:border-gray-400 transition-colors appearance-none"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none"
                   >
                     <option value="" disabled>
                       Select timeline
@@ -253,15 +254,16 @@ export default function ApplyPage() {
                 <div className="pt-4">
                   <button
                     type="submit"
-                    className="inline-block px-8 py-4 text-base font-semibold text-white bg-black hover:bg-gray-800 transition-colors cursor-pointer"
+                    className="inline-block px-8 py-4 text-base font-semibold text-navy-950 bg-accent hover:bg-accent-hover transition-colors cursor-pointer"
                   >
                     Submit Application
                   </button>
                 </div>
 
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-navy-400">
                   We review every application within 48 hours. If qualified,
-                  you&rsquo;ll receive a calendar link for your diagnosis call.
+                  you&rsquo;ll receive a calendar link for your free diagnosis
+                  call.
                 </p>
               </form>
             )}
@@ -270,10 +272,10 @@ export default function ApplyPage() {
       </section>
 
       {/* Requirements Reminder */}
-      <section className="py-20 border-t border-gray-200 bg-gray-50">
+      <section className="py-20 border-t border-navy-800 bg-navy-900">
         <div className="container-narrow">
           <RevealOnScroll>
-            <h3 className="font-display text-2xl font-bold mb-6">
+            <h3 className="font-display text-2xl font-bold text-white mb-6">
               Before you apply
             </h3>
             <BodyCopy secondary>
@@ -292,7 +294,7 @@ export default function ApplyPage() {
                 number="02"
                 title="Proven delivery capability"
                 value=""
-                reason="Your service works. You just need more clients finding it."
+                reason="Your service works. You just need more of the right clients finding it."
                 missing=""
               />
               <Requirement
@@ -306,7 +308,7 @@ export default function ApplyPage() {
                 number="04"
                 title="Patience for infrastructure"
                 value=""
-                reason="This is not a quick fix. It's a system build."
+                reason="This is not a quick fix. It's a system build that compounds over time."
                 missing=""
               />
             </div>

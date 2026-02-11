@@ -10,8 +10,8 @@ interface ButtonProps {
 export function Button({ href, children, variant = "primary" }: ButtonProps) {
   const base = "inline-block px-8 py-4 text-base font-semibold transition-colors";
   const variants = {
-    primary: "text-white bg-black hover:bg-gray-800",
-    secondary: "text-gray-900 bg-transparent border border-gray-200 hover:border-gray-400",
+    primary: "text-navy-950 bg-accent hover:bg-accent-hover",
+    secondary: "text-slate-200 bg-transparent border border-navy-600 hover:border-navy-400",
   };
 
   return (

@@ -2,17 +2,17 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="border-t border-gray-200 py-12">
+    <footer className="border-t border-navy-800 py-12">
       <div className="max-w-wide mx-auto px-5 md:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-        <span className="font-display text-base font-bold text-gray-900">
-          NOMADS
+        <span className="font-display text-base font-bold text-white">
+          Scale<span className="text-accent">.</span>digital
         </span>
 
         <ul className="flex gap-6">
           <li>
             <Link
               href="/method"
-              className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-sm text-navy-400 hover:text-white transition-colors"
             >
               Method
             </Link>
@@ -20,15 +20,15 @@ export function Footer() {
           <li>
             <Link
               href="/routes"
-              className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-sm text-navy-400 hover:text-white transition-colors"
             >
-              Routes
+              Packages
             </Link>
           </li>
           <li>
             <Link
               href="/#qualification"
-              className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-sm text-navy-400 hover:text-white transition-colors"
             >
               Qualification
             </Link>
@@ -36,15 +36,15 @@ export function Footer() {
           <li>
             <Link
               href="/apply"
-              className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-sm text-navy-400 hover:text-white transition-colors"
             >
               Apply
             </Link>
           </li>
         </ul>
 
-        <span className="text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} Nomads. All rights reserved.
+        <span className="text-sm text-navy-500">
+          &copy; {new Date().getFullYear()} Scale.digital. All rights reserved.
         </span>
       </div>
     </footer>

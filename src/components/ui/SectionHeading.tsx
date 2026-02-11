@@ -18,9 +18,7 @@ export function SectionHeading({
   };
 
   return (
-    <Tag
-      className={`font-display text-gray-900 mb-8 ${sizeClasses[size]}`}
-    >
+    <Tag className={`font-display text-white mb-8 ${sizeClasses[size]}`}>
       {children}
     </Tag>
   );
