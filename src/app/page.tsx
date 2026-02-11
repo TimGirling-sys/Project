@@ -15,16 +15,16 @@ export default function HomePage() {
   return (
     <>
       {/* ===== HERO ===== */}
-      <section className="pt-32 pb-16">
-        <div className="container-narrow">
+      <section className="pt-36 pb-20">
+        <div className="container-content">
           <RevealOnScroll>
-            <p className="text-sm text-accent mb-6 tracking-wide font-semibold uppercase">
+            <p className="text-sm text-accent mb-8 tracking-wide font-semibold uppercase">
               Websites. Marketing. Automation. Done for you.
             </p>
             <SectionHeading as="h1" size="hero">
               Your business is great. Your online presence should be too.
             </SectionHeading>
-            <p className="text-xl leading-relaxed text-slate-300 font-medium mb-10">
+            <p className="text-xl leading-relaxed text-slate-300 font-medium mb-12 max-w-2xl">
               We help established businesses get found online, bring in more
               customers, and stop wasting time on things that should run
               themselves. One partner. One system. Real results you can measure.
@@ -40,8 +40,8 @@ export default function HomePage() {
       </section>
 
       {/* ===== THE PROBLEM ===== */}
-      <section className="py-20 border-t border-navy-800">
-        <div className="container-narrow">
+      <section className="py-28 border-t border-navy-800/60">
+        <div className="container-content">
           <RevealOnScroll>
             <CheckpointHeader label="Sound familiar?" />
             <SectionHeading>
@@ -61,7 +61,7 @@ export default function HomePage() {
           </RevealOnScroll>
 
           <RevealOnScroll>
-            <div className="grid gap-8 my-12">
+            <div className="grid md:grid-cols-2 gap-8 my-16">
               <ResultItem
                 label="Problem #1"
                 title={'"I know I need a website but don\'t know where to start"'}
@@ -95,8 +95,8 @@ export default function HomePage() {
       </section>
 
       {/* ===== HOW IT WORKS ===== */}
-      <section id="how-it-works" className="py-20 border-t border-navy-800">
-        <div className="container-narrow">
+      <section id="how-it-works" className="py-28 border-t border-navy-800/60">
+        <div className="container-content">
           <RevealOnScroll>
             <CheckpointHeader label="How it works" />
             <SectionHeading>
@@ -110,7 +110,7 @@ export default function HomePage() {
           </RevealOnScroll>
 
           <RevealOnScroll>
-            <div className="grid gap-8 my-12">
+            <div className="grid md:grid-cols-2 gap-10 my-16">
               <Phase
                 number="01"
                 title="Build your online foundation"
@@ -139,7 +139,7 @@ export default function HomePage() {
           </RevealOnScroll>
 
           <RevealOnScroll>
-            <div className="w-10 h-0.5 bg-navy-700 my-12" />
+            <div className="w-12 h-0.5 bg-navy-700 my-14" />
             <BodyCopy>
               Each stage builds on the last. Your website converts visitors.
               Your marketing brings the right visitors. Your lead system
@@ -151,8 +151,8 @@ export default function HomePage() {
       </section>
 
       {/* ===== SERVICES OVERVIEW ===== */}
-      <section id="services" className="py-20 border-t border-navy-800">
-        <div className="container-narrow">
+      <section id="services" className="py-28 border-t border-navy-800/60">
+        <div className="container-content">
           <RevealOnScroll>
             <CheckpointHeader label="What you get" />
             <SectionHeading>
@@ -166,7 +166,7 @@ export default function HomePage() {
           </RevealOnScroll>
 
           <RevealOnScroll>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-16">
               <PathCard
                 name="Website"
                 subtitle="Your online foundation"
@@ -197,8 +197,8 @@ export default function HomePage() {
       </section>
 
       {/* ===== QUALIFICATION ===== */}
-      <section id="qualification" className="py-20 border-t border-navy-800">
-        <div className="container-narrow">
+      <section id="qualification" className="py-28 border-t border-navy-800/60">
+        <div className="container-content">
           <RevealOnScroll>
             <CheckpointHeader label="Is this for me?" />
             <SectionHeading>
@@ -212,7 +212,7 @@ export default function HomePage() {
           </RevealOnScroll>
 
           <RevealOnScroll>
-            <div className="grid gap-8 my-12">
+            <div className="grid md:grid-cols-2 gap-10 my-16">
               <Requirement
                 number="01"
                 title="You have an established business"
@@ -245,11 +245,11 @@ export default function HomePage() {
           </RevealOnScroll>
 
           <RevealOnScroll>
-            <div className="w-10 h-0.5 bg-navy-700 my-12" />
-            <h3 className="font-display text-2xl font-bold text-white mb-6">
+            <div className="w-12 h-0.5 bg-navy-700 my-14" />
+            <h3 className="font-display text-2xl font-bold text-white mb-8">
               Industries we work with
             </h3>
-            <ul className="space-y-0">
+            <ul className="grid md:grid-cols-2 gap-x-12">
               {[
                 "Professional services (accountants, lawyers, consultants)",
                 "Home services (plumbers, electricians, HVAC, landscaping)",
@@ -259,7 +259,7 @@ export default function HomePage() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="py-3 border-b border-navy-800 text-base text-navy-300 flex gap-3 items-baseline"
+                  className="py-4 border-b border-navy-800/60 text-base text-navy-300 flex gap-3 items-baseline"
                 >
                   <span className="text-accent flex-shrink-0">+</span>
                   {item}
@@ -271,13 +271,13 @@ export default function HomePage() {
       </section>
 
       {/* ===== SOCIAL PROOF ===== */}
-      <section className="py-20 border-t border-navy-800 bg-navy-900">
-        <div className="container-narrow">
+      <section className="py-28 border-t border-navy-800/60 bg-navy-900">
+        <div className="container-content">
           <RevealOnScroll>
-            <p className="text-xs font-semibold tracking-label uppercase text-accent mb-8">
+            <p className="text-xs font-semibold tracking-label uppercase text-accent mb-10">
               What our clients say
             </p>
-            <div>
+            <div className="grid md:grid-cols-3 gap-6">
               <Testimonial
                 text="We put off getting a proper website for years. Scale.digital had us live in three weeks and within two months we were getting 30+ enquiries a month from Google alone. Should have done this years ago."
                 author="Mark T."
@@ -299,8 +299,8 @@ export default function HomePage() {
       </section>
 
       {/* ===== FINAL CTA ===== */}
-      <section className="py-20 border-t border-navy-800">
-        <div className="container-narrow">
+      <section className="py-28 border-t border-navy-800/60">
+        <div className="container-content">
           <RevealOnScroll>
             <SectionHeading>
               See what your business looks like online. For free.
@@ -312,7 +312,7 @@ export default function HomePage() {
               will actually move the needle for your business.
             </BodyCopy>
 
-            <div className="flex flex-wrap items-center gap-3 my-10 text-base font-medium text-slate-300">
+            <div className="flex flex-wrap items-center gap-4 my-12 text-base font-medium text-slate-300">
               <span>Free audit</span>
               <span className="text-navy-600">&rarr;</span>
               <span>15-min strategy call</span>
@@ -322,10 +322,10 @@ export default function HomePage() {
               <span>We build it</span>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-12">
               <Button href="/apply">Get your free website audit</Button>
             </div>
-            <p className="text-sm text-navy-400 mt-6">
+            <p className="text-sm text-navy-400 mt-8">
               Takes 30 seconds to apply. We'll get back to you within 24
               hours.
             </p>

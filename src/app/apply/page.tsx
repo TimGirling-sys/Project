@@ -19,8 +19,8 @@ export default function ApplyPage() {
   return (
     <>
       {/* Header */}
-      <section className="pt-32 pb-12">
-        <div className="container-narrow">
+      <section className="pt-36 pb-16">
+        <div className="container-content">
           <RevealOnScroll>
             <CheckpointHeader label="Free website audit" />
             <SectionHeading as="h1" size="section">
@@ -40,16 +40,16 @@ export default function ApplyPage() {
       </section>
 
       {/* Form */}
-      <section className="py-20 border-t border-navy-800">
+      <section className="py-28 border-t border-navy-800/60">
         <div className="container-narrow">
           <RevealOnScroll>
-            <h2 className="font-display text-2xl font-bold text-white mb-8">
+            <h2 className="font-display text-2xl font-bold text-white mb-10">
               Tell us about your business
             </h2>
 
             {submitted ? (
-              <div className="p-8 bg-navy-900 border-l-[3px] border-accent">
-                <h3 className="font-display text-xl font-bold text-white mb-3">
+              <div className="p-10 bg-navy-900 border-l-[3px] border-accent">
+                <h3 className="font-display text-xl font-bold text-white mb-4">
                   Got it. We're on it.
                 </h3>
                 <p className="text-base leading-relaxed text-navy-300">
@@ -59,37 +59,41 @@ export default function ApplyPage() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
-                    Your name
-                  </label>
-                  <input type="text" id="name" name="name" required placeholder="Full name"
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
+              <form onSubmit={handleSubmit} className="space-y-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                      Your name
+                    </label>
+                    <input type="text" id="name" name="name" required placeholder="Full name"
+                      className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
+                  </div>
+
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                      Email address
+                    </label>
+                    <input type="email" id="email" name="email" required placeholder="you@company.com"
+                      className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
+                  </div>
                 </div>
 
-                <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
-                    Email address
-                  </label>
-                  <input type="email" id="email" name="email" required placeholder="you@company.com"
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
-                </div>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                      Phone number
+                    </label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your best contact number"
+                      className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
+                  </div>
 
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
-                    Phone number
-                  </label>
-                  <input type="tel" id="phone" name="phone" placeholder="Your best contact number"
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
-                </div>
-
-                <div>
-                  <label htmlFor="company" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
-                    Business name
-                  </label>
-                  <input type="text" id="company" name="company" required placeholder="Your company name"
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
+                  <div>
+                    <label htmlFor="company" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                      Business name
+                    </label>
+                    <input type="text" id="company" name="company" required placeholder="Your company name"
+                      className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
+                  </div>
                 </div>
 
                 <div>
@@ -100,34 +104,36 @@ export default function ApplyPage() {
                     className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
                 </div>
 
-                <div>
-                  <label htmlFor="industry" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
-                    What industry are you in?
-                  </label>
-                  <select id="industry" name="industry" required defaultValue=""
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none">
-                    <option value="" disabled>Pick the closest match</option>
-                    <option value="professional-services">Professional services (accounting, legal, consulting)</option>
-                    <option value="home-services">Home services (plumbing, electrical, HVAC, landscaping)</option>
-                    <option value="healthcare">Healthcare (dental, physio, medical)</option>
-                    <option value="retail-hospitality">Retail or hospitality</option>
-                    <option value="b2b-services">B2B services</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <label htmlFor="industry" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                      What industry are you in?
+                    </label>
+                    <select id="industry" name="industry" required defaultValue=""
+                      className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none">
+                      <option value="" disabled>Pick the closest match</option>
+                      <option value="professional-services">Professional services (accounting, legal, consulting)</option>
+                      <option value="home-services">Home services (plumbing, electrical, HVAC, landscaping)</option>
+                      <option value="healthcare">Healthcare (dental, physio, medical)</option>
+                      <option value="retail-hospitality">Retail or hospitality</option>
+                      <option value="b2b-services">B2B services</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
 
-                <div>
-                  <label htmlFor="team-size" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
-                    How many people on your team?
-                  </label>
-                  <select id="team-size" name="team-size" defaultValue=""
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none">
-                    <option value="" disabled>Select team size</option>
-                    <option value="1-10">1-10</option>
-                    <option value="11-50">11-50</option>
-                    <option value="51-100">51-100</option>
-                    <option value="100+">100+</option>
-                  </select>
+                  <div>
+                    <label htmlFor="team-size" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                      How many people on your team?
+                    </label>
+                    <select id="team-size" name="team-size" defaultValue=""
+                      className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none">
+                      <option value="" disabled>Select team size</option>
+                      <option value="1-10">1-10</option>
+                      <option value="11-50">11-50</option>
+                      <option value="51-100">51-100</option>
+                      <option value="100+">100+</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div>
@@ -173,17 +179,17 @@ export default function ApplyPage() {
       </section>
 
       {/* What to expect */}
-      <section className="py-20 border-t border-navy-800 bg-navy-900">
-        <div className="container-narrow">
+      <section className="py-28 border-t border-navy-800/60 bg-navy-900">
+        <div className="container-content">
           <RevealOnScroll>
-            <h3 className="font-display text-2xl font-bold text-white mb-6">
+            <h3 className="font-display text-2xl font-bold text-white mb-8">
               What you'll get in your free audit
             </h3>
             <BodyCopy secondary>
               This isn't a generic report. We actually look at your business.
             </BodyCopy>
 
-            <div className="grid gap-8 mt-8">
+            <div className="grid md:grid-cols-2 gap-10 mt-10">
               <Requirement number="01" title="Website review" value=""
                 reason="How your site looks, how fast it loads, how it works on mobile, and whether it's set up to convert visitors into customers." missing="" />
               <Requirement number="02" title="Search visibility check" value=""

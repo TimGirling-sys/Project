@@ -47,14 +47,14 @@ export default function MethodPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-12">
-        <div className="container-narrow">
+      <section className="pt-36 pb-16">
+        <div className="container-content">
           <RevealOnScroll>
             <CheckpointHeader label="How it works" />
             <SectionHeading as="h1" size="hero">
               Simple process. Serious results.
             </SectionHeading>
-            <p className="text-xl leading-relaxed text-slate-300 font-medium mb-8">
+            <p className="text-xl leading-relaxed text-slate-300 font-medium mb-10 max-w-2xl">
               We take you from invisible online to having a complete system
               that brings in qualified customers automatically. Here is
               exactly how we do it.
@@ -69,10 +69,10 @@ export default function MethodPage() {
       </section>
 
       {/* Stages */}
-      <section className="py-20 border-t border-navy-800">
-        <div className="container-narrow">
+      <section className="py-28 border-t border-navy-800/60">
+        <div className="container-content">
           {stages.map((stage) => (
-            <RevealOnScroll key={stage.number} className="mb-20 last:mb-12">
+            <RevealOnScroll key={stage.number} className="mb-24 last:mb-14">
               <CheckpointHeader label={`Stage ${stage.number}`} />
               <h2 className="font-display text-2xl font-bold leading-tight text-white mb-6">
                 {stage.title}
@@ -86,8 +86,8 @@ export default function MethodPage() {
       </section>
 
       {/* Why us */}
-      <section className="py-20 border-t border-navy-800">
-        <div className="container-narrow">
+      <section className="py-28 border-t border-navy-800/60">
+        <div className="container-content">
           <RevealOnScroll>
             <SectionHeading>
               Why businesses choose us over doing it themselves.
@@ -102,7 +102,7 @@ export default function MethodPage() {
               backgrounds in sales, marketing, and operations. We speak your
               language and focus on what actually makes you money.
             </BodyCopy>
-            <div className="mt-10">
+            <div className="mt-12">
               <Button href="/apply">Get your free website audit</Button>
             </div>
           </RevealOnScroll>

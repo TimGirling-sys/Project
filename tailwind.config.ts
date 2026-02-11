@@ -49,8 +49,9 @@ const config: Config = {
         },
       },
       maxWidth: {
-        content: "680px",
-        wide: "960px",
+        content: "960px",
+        narrow: "720px",
+        wide: "1200px",
       },
       letterSpacing: {
         label: "0.15em",

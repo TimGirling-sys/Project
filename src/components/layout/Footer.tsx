@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="border-t border-navy-800 py-12">
-      <div className="max-w-wide mx-auto px-5 md:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-        <span className="font-display text-base font-bold text-white">
+    <footer className="border-t border-navy-800/60 py-16">
+      <div className="container-wide flex flex-col md:flex-row justify-between items-center gap-8">
+        <span className="font-display text-lg font-bold text-white">
           Scale<span className="text-accent">.</span>digital
         </span>
 
-        <ul className="flex gap-6">
+        <ul className="flex gap-8">
           <li>
             <Link
               href="/method"

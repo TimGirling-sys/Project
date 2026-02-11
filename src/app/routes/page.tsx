@@ -75,14 +75,14 @@ export default function RoutesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-12">
-        <div className="container-narrow">
+      <section className="pt-36 pb-16">
+        <div className="container-content">
           <RevealOnScroll>
             <CheckpointHeader label="Services" />
             <SectionHeading as="h1" size="hero">
               Everything your business needs to win online.
             </SectionHeading>
-            <p className="text-xl leading-relaxed text-slate-300 font-medium mb-8">
+            <p className="text-xl leading-relaxed text-slate-300 font-medium mb-10 max-w-2xl">
               Most businesses need more than just a website. They need the
               whole system: the site, the marketing, the lead capture, and
               the automation to tie it all together.
@@ -93,30 +93,30 @@ export default function RoutesPage() {
 
       {/* Services */}
       {services.map((service) => (
-        <section key={service.id} id={service.id} className="py-20 border-t border-navy-800">
-          <div className="container-narrow">
+        <section key={service.id} id={service.id} className="py-28 border-t border-navy-800/60">
+          <div className="container-content">
             <RevealOnScroll>
               <CheckpointHeader label={`Service ${service.number}`} />
               <SectionHeading>{service.name}</SectionHeading>
-              <p className="text-xl leading-relaxed text-navy-300 font-medium -mt-4 mb-8">
+              <p className="text-xl leading-relaxed text-navy-300 font-medium -mt-4 mb-10">
                 {service.subtitle}
               </p>
 
-              <div className="w-10 h-0.5 bg-navy-700 my-8" />
+              <div className="w-12 h-0.5 bg-navy-700 my-10" />
 
-              <div className="grid gap-10 mt-8">
+              <div className="grid gap-12 mt-10">
                 <div>
-                  <p className="block text-sm font-semibold text-accent mb-2 uppercase tracking-widest">
+                  <p className="block text-sm font-semibold text-accent mb-3 uppercase tracking-widest">
                     The problem
                   </p>
                   <BodyCopy>{service.situation}</BodyCopy>
                 </div>
 
                 <div>
-                  <p className="block text-sm font-semibold text-accent mb-2 uppercase tracking-widest">
+                  <p className="block text-sm font-semibold text-accent mb-3 uppercase tracking-widest">
                     What you get
                   </p>
-                  <div className="grid gap-8 mt-4">
+                  <div className="grid md:grid-cols-2 gap-8 mt-6">
                     {service.installs.map((item) => (
                       <ResultItem
                         key={item.label}
@@ -129,14 +129,14 @@ export default function RoutesPage() {
                 </div>
 
                 <div>
-                  <p className="block text-sm font-semibold text-accent mb-2 uppercase tracking-widest">
+                  <p className="block text-sm font-semibold text-accent mb-3 uppercase tracking-widest">
                     Best for
                   </p>
                   <BodyCopy secondary>{service.bestFor}</BodyCopy>
                 </div>
               </div>
 
-              <div className="mt-10">
+              <div className="mt-12">
                 <Button href="/apply">Get started with {service.name.toLowerCase()}</Button>
               </div>
             </RevealOnScroll>
@@ -145,8 +145,8 @@ export default function RoutesPage() {
       ))}
 
       {/* CTA */}
-      <section className="py-20 border-t border-navy-800 bg-navy-900">
-        <div className="container-narrow">
+      <section className="py-28 border-t border-navy-800/60 bg-navy-900">
+        <div className="container-content">
           <RevealOnScroll>
             <SectionHeading>Not sure what you need?</SectionHeading>
             <BodyCopy secondary>
@@ -155,7 +155,7 @@ export default function RoutesPage() {
               you a clear plan. No obligation. No tech jargon. Just straight
               answers.
             </BodyCopy>
-            <div className="mt-8">
+            <div className="mt-10">
               <Button href="/apply">Get your free website audit</Button>
             </div>
           </RevealOnScroll>

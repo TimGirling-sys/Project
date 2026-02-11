@@ -38,7 +38,7 @@ export default function RootLayout({
       </head>
       <body>
         <Navbar />
-        <main className="pt-[60px]">{children}</main>
+        <main className="pt-[72px]">{children}</main>
         <Footer />
       </body>
     </html>

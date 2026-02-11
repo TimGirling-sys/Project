@@ -7,11 +7,11 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-950/95 backdrop-blur-sm border-b border-navy-800">
-      <div className="max-w-wide mx-auto px-5 md:px-6 py-4 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-950/95 backdrop-blur-sm border-b border-navy-800/60">
+      <div className="container-wide py-5 flex items-center justify-between">
         <Link
           href="/"
-          className="font-display text-lg font-bold tracking-tight text-white"
+          className="font-display text-xl font-bold tracking-tight text-white"
         >
           Scale<span className="text-accent">.</span>digital
         </Link>
@@ -23,21 +23,21 @@ export function Navbar() {
           aria-label="Toggle menu"
           aria-expanded={isOpen}
         >
-          <div className="space-y-1">
+          <div className="space-y-1.5">
             <span
-              className={`block w-5 h-0.5 bg-white transition-all ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}
+              className={`block w-5 h-0.5 bg-white transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`}
             />
             <span
               className={`block w-5 h-0.5 bg-white transition-all ${isOpen ? "opacity-0" : ""}`}
             />
             <span
-              className={`block w-5 h-0.5 bg-white transition-all ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}
+              className={`block w-5 h-0.5 bg-white transition-all ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}
             />
           </div>
         </button>
 
         {/* Desktop nav */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-10">
           <li>
             <Link
               href="/method"
@@ -65,7 +65,7 @@ export function Navbar() {
           <li>
             <Link
               href="/apply"
-              className="text-sm font-semibold text-navy-950 bg-accent px-5 py-2 hover:bg-accent-hover transition-colors"
+              className="text-sm font-semibold text-navy-950 bg-accent px-6 py-2.5 hover:bg-accent-hover transition-colors"
             >
               Free Audit
             </Link>
@@ -75,7 +75,7 @@ export function Navbar() {
         {/* Mobile nav */}
         {isOpen && (
           <div className="absolute top-full left-0 right-0 bg-navy-950 border-b border-navy-800 md:hidden">
-            <ul className="flex flex-col gap-4 p-6">
+            <ul className="flex flex-col gap-5 p-8">
               <li>
                 <Link
                   href="/method"
@@ -106,7 +106,7 @@ export function Navbar() {
               <li>
                 <Link
                   href="/apply"
-                  className="inline-block text-sm font-semibold text-navy-950 bg-accent px-5 py-2"
+                  className="inline-block text-sm font-semibold text-navy-950 bg-accent px-6 py-2.5"
                   onClick={() => setIsOpen(false)}
                 >
                   Free Audit
