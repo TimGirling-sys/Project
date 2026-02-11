@@ -22,19 +22,18 @@ export default function ApplyPage() {
       <section className="pt-32 pb-12">
         <div className="container-narrow">
           <RevealOnScroll>
-            <CheckpointHeader label="Get Started" />
+            <CheckpointHeader label="Free website audit" />
             <SectionHeading as="h1" size="section">
-              Start with a free diagnosis.
+              Let's see where you're losing customers online.
             </SectionHeading>
             <BodyCopy secondary>
-              Every engagement begins with a strategy call. We map your Revenue
-              Engine, identify the failure point, and determine if we can help.
-              No pitch. No pressure. Just clarity on what&rsquo;s broken and
-              what to build.
+              Fill in the form below and we'll take a proper look at your
+              online presence. We'll tell you what's working, what's not,
+              and exactly what to fix first. Free. No strings attached.
             </BodyCopy>
             <PatternBlock
               label="What happens next"
-              text="Submit your application → We review within 48 hours → If qualified, we schedule your free diagnosis call → You receive a system proposal within 5 business days."
+              text="You submit the form. We review your website and online presence within 24 hours. Then we'll book a quick 15-minute call to walk you through what we found and give you a clear action plan."
             />
           </RevealOnScroll>
         </div>
@@ -45,225 +44,127 @@ export default function ApplyPage() {
         <div className="container-narrow">
           <RevealOnScroll>
             <h2 className="font-display text-2xl font-bold text-white mb-8">
-              Your details
+              Tell us about your business
             </h2>
 
             {submitted ? (
               <div className="p-8 bg-navy-900 border-l-[3px] border-accent">
                 <h3 className="font-display text-xl font-bold text-white mb-3">
-                  Application received.
+                  Got it. We're on it.
                 </h3>
                 <p className="text-base leading-relaxed text-navy-300">
-                  We review every application within 48 hours. If
-                  qualified, you&rsquo;ll receive a calendar link for your
-                  free diagnosis call. Check your inbox.
+                  We'll review your online presence and get back to you
+                  within 24 hours with your free audit and a time to chat.
+                  Check your inbox.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
-                  >
-                    Full Name
+                  <label htmlFor="name" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                    Your name
                   </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    placeholder="Your full name"
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500"
-                  />
+                  <input type="text" id="name" name="name" required placeholder="Full name"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
-                  >
-                    Email Address
+                  <label htmlFor="email" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                    Email address
                   </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="you@company.com"
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500"
-                  />
+                  <input type="email" id="email" name="email" required placeholder="you@company.com"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="company"
-                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
-                  >
-                    Company / Business Name
+                  <label htmlFor="phone" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                    Phone number
                   </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    placeholder="Your company"
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500"
-                  />
+                  <input type="tel" id="phone" name="phone" placeholder="Your best contact number"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="website"
-                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
-                  >
-                    Website URL
+                  <label htmlFor="company" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                    Business name
                   </label>
-                  <input
-                    type="url"
-                    id="website"
-                    name="website"
-                    placeholder="https://yourcompany.com"
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500"
-                  />
+                  <input type="text" id="company" name="company" required placeholder="Your company name"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="revenue"
-                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
-                  >
-                    Current Monthly Revenue
+                  <label htmlFor="website" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                    Current website (if you have one)
                   </label>
-                  <select
-                    id="revenue"
-                    name="revenue"
-                    required
-                    defaultValue=""
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none"
-                  >
-                    <option value="" disabled>
-                      Select your range
-                    </option>
-                    <option value="under-10k">Under $10K/month</option>
-                    <option value="10k-25k">$10K – $25K/month</option>
-                    <option value="25k-50k">$25K – $50K/month</option>
-                    <option value="50k-100k">$50K – $100K/month</option>
-                    <option value="100k-plus">$100K+/month</option>
+                  <input type="url" id="website" name="website" placeholder="https://yourbusiness.com"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors placeholder:text-navy-500" />
+                </div>
+
+                <div>
+                  <label htmlFor="industry" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                    What industry are you in?
+                  </label>
+                  <select id="industry" name="industry" required defaultValue=""
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none">
+                    <option value="" disabled>Pick the closest match</option>
+                    <option value="professional-services">Professional services (accounting, legal, consulting)</option>
+                    <option value="home-services">Home services (plumbing, electrical, HVAC, landscaping)</option>
+                    <option value="healthcare">Healthcare (dental, physio, medical)</option>
+                    <option value="retail-hospitality">Retail or hospitality</option>
+                    <option value="b2b-services">B2B services</option>
+                    <option value="other">Other</option>
                   </select>
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="business-type"
-                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
-                  >
-                    Business Type
+                  <label htmlFor="team-size" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                    How many people on your team?
                   </label>
-                  <select
-                    id="business-type"
-                    name="business-type"
-                    required
-                    defaultValue=""
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none"
-                  >
-                    <option value="" disabled>
-                      Select your type
-                    </option>
-                    <option value="agency">Agency</option>
-                    <option value="consultancy">Consultancy</option>
-                    <option value="coaching">Coaching / Training</option>
-                    <option value="saas">SaaS</option>
-                    <option value="other">Other B2B Services</option>
+                  <select id="team-size" name="team-size" defaultValue=""
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none">
+                    <option value="" disabled>Select team size</option>
+                    <option value="1-10">1-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51-100">51-100</option>
+                    <option value="100+">100+</option>
                   </select>
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="route"
-                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
-                  >
-                    Which package interests you?
+                  <label htmlFor="help" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                    What do you need the most help with?
                   </label>
-                  <select
-                    id="route"
-                    name="route"
-                    defaultValue=""
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none"
-                  >
-                    <option value="" disabled>
-                      Select a package (optional)
-                    </option>
-                    <option value="launchpad">
-                      Launchpad — Foundation Build
-                    </option>
-                    <option value="accelerate">
-                      Accelerate — Scale Infrastructure
-                    </option>
-                    <option value="expand">Expand — Market Expansion</option>
-                    <option value="overhaul">
-                      Overhaul — Full System Rebuild
-                    </option>
-                    <option value="unsure">Not sure yet</option>
+                  <select id="help" name="help" defaultValue=""
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none">
+                    <option value="" disabled>Pick the biggest priority</option>
+                    <option value="website">I need a website (or a better one)</option>
+                    <option value="marketing">I need more customers finding me online</option>
+                    <option value="leads">I need to stop losing leads</option>
+                    <option value="automation">I need to automate repetitive work</option>
+                    <option value="everything">All of the above</option>
+                    <option value="not-sure">Not sure yet</option>
                   </select>
                 </div>
 
                 <div>
-                  <label
-                    htmlFor="challenge"
-                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
-                  >
-                    What is your biggest growth challenge right now?
+                  <label htmlFor="challenge" className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide">
+                    Anything else you want us to know?
                   </label>
-                  <textarea
-                    id="challenge"
-                    name="challenge"
-                    required
-                    rows={5}
-                    placeholder="Tell us about your current situation. Where are leads coming from? What's working? What's broken? What have you already tried?"
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors resize-y min-h-[140px] placeholder:text-navy-500"
-                  />
-                  <p className="text-sm text-navy-400 mt-2">
-                    The more specific you are, the more useful your diagnosis
-                    call will be.
-                  </p>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="timeline"
-                    className="block text-sm font-semibold text-slate-200 mb-2 tracking-wide"
-                  >
-                    When are you looking to start?
-                  </label>
-                  <select
-                    id="timeline"
-                    name="timeline"
-                    defaultValue=""
-                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors appearance-none"
-                  >
-                    <option value="" disabled>
-                      Select timeline
-                    </option>
-                    <option value="immediately">Immediately</option>
-                    <option value="1-month">Within 1 month</option>
-                    <option value="1-3-months">1–3 months</option>
-                    <option value="exploring">Just exploring</option>
-                  </select>
+                  <textarea id="challenge" name="challenge" rows={4}
+                    placeholder="Tell us about your biggest challenge right now. What's frustrating you? What have you already tried?"
+                    className="w-full px-4 py-3 text-base text-slate-100 bg-navy-900 border border-navy-700 outline-none focus:border-accent transition-colors resize-y min-h-[120px] placeholder:text-navy-500" />
                 </div>
 
                 <div className="pt-4">
-                  <button
-                    type="submit"
-                    className="inline-block px-8 py-4 text-base font-semibold text-navy-950 bg-accent hover:bg-accent-hover transition-colors cursor-pointer"
-                  >
-                    Submit Application
+                  <button type="submit"
+                    className="inline-block px-8 py-4 text-base font-semibold text-navy-950 bg-accent hover:bg-accent-hover transition-colors cursor-pointer">
+                    Get my free audit
                   </button>
                 </div>
 
                 <p className="text-sm text-navy-400">
-                  We review every application within 48 hours. If qualified,
-                  you&rsquo;ll receive a calendar link for your free diagnosis
-                  call.
+                  No spam. No hard sell. We'll review your online presence
+                  and get back to you within 24 hours.
                 </p>
               </form>
             )}
@@ -271,46 +172,26 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      {/* Requirements Reminder */}
+      {/* What to expect */}
       <section className="py-20 border-t border-navy-800 bg-navy-900">
         <div className="container-narrow">
           <RevealOnScroll>
             <h3 className="font-display text-2xl font-bold text-white mb-6">
-              Before you apply
+              What you'll get in your free audit
             </h3>
             <BodyCopy secondary>
-              This process works best for businesses that meet these conditions:
+              This isn't a generic report. We actually look at your business.
             </BodyCopy>
 
             <div className="grid gap-8 mt-8">
-              <Requirement
-                number="01"
-                title="$10K+ monthly revenue"
-                value=""
-                reason="Cash flow stability to sustain the build phase."
-                missing=""
-              />
-              <Requirement
-                number="02"
-                title="Proven delivery capability"
-                value=""
-                reason="Your service works. You just need more of the right clients finding it."
-                missing=""
-              />
-              <Requirement
-                number="03"
-                title="Founder-level decision authority"
-                value=""
-                reason="System decisions require leadership involvement."
-                missing=""
-              />
-              <Requirement
-                number="04"
-                title="Patience for infrastructure"
-                value=""
-                reason="This is not a quick fix. It's a system build that compounds over time."
-                missing=""
-              />
+              <Requirement number="01" title="Website review" value=""
+                reason="How your site looks, how fast it loads, how it works on mobile, and whether it's set up to convert visitors into customers." missing="" />
+              <Requirement number="02" title="Search visibility check" value=""
+                reason="Whether people can find you on Google, what your competitors are doing, and where the biggest opportunities are." missing="" />
+              <Requirement number="03" title="Lead response audit" value=""
+                reason="How quickly you respond to enquiries, what happens after someone contacts you, and where leads are falling through the cracks." missing="" />
+              <Requirement number="04" title="Clear action plan" value=""
+                reason="A prioritised list of exactly what to fix first, what it will cost, and what kind of results you can expect." missing="" />
             </div>
           </RevealOnScroll>
         </div>

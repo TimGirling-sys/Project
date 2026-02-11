@@ -43,7 +43,7 @@ export function Navbar() {
               href="/method"
               className="text-sm font-medium text-navy-300 hover:text-white transition-colors tracking-wide"
             >
-              Method
+              How It Works
             </Link>
           </li>
           <li>
@@ -51,7 +51,7 @@ export function Navbar() {
               href="/routes"
               className="text-sm font-medium text-navy-300 hover:text-white transition-colors tracking-wide"
             >
-              Packages
+              Services
             </Link>
           </li>
           <li>
@@ -67,7 +67,7 @@ export function Navbar() {
               href="/apply"
               className="text-sm font-semibold text-navy-950 bg-accent px-5 py-2 hover:bg-accent-hover transition-colors"
             >
-              Get Started
+              Free Audit
             </Link>
           </li>
         </ul>
@@ -82,7 +82,7 @@ export function Navbar() {
                   className="text-sm font-medium text-navy-300"
                   onClick={() => setIsOpen(false)}
                 >
-                  Method
+                  How It Works
                 </Link>
               </li>
               <li>
@@ -91,7 +91,7 @@ export function Navbar() {
                   className="text-sm font-medium text-navy-300"
                   onClick={() => setIsOpen(false)}
                 >
-                  Packages
+                  Services
                 </Link>
               </li>
               <li>
@@ -109,7 +109,7 @@ export function Navbar() {
                   className="inline-block text-sm font-semibold text-navy-950 bg-accent px-5 py-2"
                   onClick={() => setIsOpen(false)}
                 >
-                  Get Started
+                  Free Audit
                 </Link>
               </li>
             </ul>

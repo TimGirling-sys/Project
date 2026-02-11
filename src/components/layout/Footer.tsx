@@ -14,7 +14,7 @@ export function Footer() {
               href="/method"
               className="text-sm text-navy-400 hover:text-white transition-colors"
             >
-              Method
+              How It Works
             </Link>
           </li>
           <li>
@@ -22,7 +22,7 @@ export function Footer() {
               href="/routes"
               className="text-sm text-navy-400 hover:text-white transition-colors"
             >
-              Packages
+              Services
             </Link>
           </li>
           <li>
@@ -30,7 +30,7 @@ export function Footer() {
               href="/#qualification"
               className="text-sm text-navy-400 hover:text-white transition-colors"
             >
-              Qualification
+              Is This For Me?
             </Link>
           </li>
           <li>
@@ -38,7 +38,7 @@ export function Footer() {
               href="/apply"
               className="text-sm text-navy-400 hover:text-white transition-colors"
             >
-              Apply
+              Free Audit
             </Link>
           </li>
         </ul>

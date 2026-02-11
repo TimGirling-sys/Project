@@ -4,15 +4,15 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Scale.digital — Acquisition Systems That Scale With You",
+  title: "Scale.digital — Get Found Online. Get More Customers. Grow on Autopilot.",
   description:
-    "Scale.digital installs predictable acquisition systems for agencies, coaches, and consultants scaling from $10K to $100K/month. Infrastructure, not tactics.",
+    "We take established businesses from invisible online to having a complete system that brings in qualified customers automatically. Websites, ads, lead capture, and automation — all done for you.",
   keywords:
-    "acquisition systems, agency scaling, lead generation, growth infrastructure, predictable revenue, consultants, coaches",
+    "website design for small business, digital marketing for local business, lead generation services, marketing automation, customer acquisition, online presence",
   openGraph: {
-    title: "Scale.digital — Predictable Revenue. Engineered.",
+    title: "Scale.digital — More Customers. Less Busywork.",
     description:
-      "We install complete acquisition systems for agencies and consultants scaling from $10K to $100K/month. Infrastructure, not tactics.",
+      "We build websites, run ads, capture leads, and automate follow-up for established businesses. One partner. Complete system. Real results.",
     type: "website",
   },
 };

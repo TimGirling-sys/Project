@@ -7,117 +7,67 @@ import { Button } from "@/components/ui/Button";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Packages — Scale.digital",
+  title: "Services | Scale.digital",
   description:
-    "Four packages matched to your revenue stage. Launchpad, Accelerate, Expand, Overhaul. Find the right acquisition system for your business.",
+    "Website design, digital marketing, lead capture, and business automation for established businesses. See what each service includes and how they work together.",
 };
 
-const routes = [
+const services = [
   {
-    id: "launchpad",
+    id: "website",
     number: "01",
-    name: "Launchpad",
-    subtitle: "Foundation Build — $10K–$25K/mo businesses",
-    situation:
-      "You have a proven service. Clients love your work. But growth is completely founder-dependent. New clients come from referrals, personal networking, or your reputation. There's no system generating demand independently.",
-    bottleneck:
-      "No acquisition system exists. You are the pipeline. Your calendar is the ceiling. When you stop actively selling, revenue stops with it.",
+    name: "Website Design",
+    subtitle: "Look as professional online as you are in person",
+    situation: "Your website is outdated, slow, or doesn't exist. When customers search for your business and land on your site, they leave. You're losing credibility and customers every day.",
     installs: [
-      {
-        label: "Stage 01",
-        title: "Offer Architecture",
-        description:
-          "Transform your service description into a compelling market offer with clear positioning, differentiation, and a reason to act now.",
-      },
-      {
-        label: "Stage 02",
-        title: "Market Signal Clarity",
-        description:
-          "Define exactly who your system targets and what behavioral signals indicate they're ready to buy.",
-      },
-      {
-        label: "Stage 03",
-        title: "Creative Infrastructure",
-        description:
-          "Build the messaging, ad systems, and content that bridge your offer to your target market.",
-      },
-      {
-        label: "Stage 05",
-        title: "Capture Engineering",
-        description:
-          "Design and build the funnel infrastructure that converts attention into booked discovery calls.",
-      },
+      { label: "Design", title: "Professional, custom design", description: "Not a template. A website designed around your business, your customers, and what makes you different from competitors." },
+      { label: "Mobile", title: "Works perfectly on every device", description: "Over 60% of your visitors are on their phones. Your site will look and work great on any screen size." },
+      { label: "Speed", title: "Loads in under 3 seconds", description: "Slow sites lose customers. We build fast sites that keep people engaged instead of hitting the back button." },
+      { label: "Conversion", title: "Built to turn visitors into customers", description: "Clear messaging, easy contact forms, online booking, click-to-call. Everything designed to make it simple for people to choose you." },
     ],
-    bestFor:
-      "Agency owners, consultants, and coaches at $10K–$25K/month who are ready to build their first real acquisition system and stop relying on referrals.",
+    bestFor: "Any established business that needs a professional website or has outgrown their current one. Typical build time: 2-4 weeks.",
   },
   {
-    id: "accelerate",
+    id: "marketing",
     number: "02",
-    name: "Accelerate",
-    subtitle: "Scale Infrastructure — $25K–$50K/mo businesses",
-    situation:
-      "You have some lead flow. Maybe ads are running, maybe you have a basic funnel. But scaling breaks things. Conversion rates drop at higher volume. Your cost per acquisition rises. What worked at $25K/month falls apart at $50K.",
-    bottleneck:
-      "The foundation exists but it wasn't built to scale. Components that worked at low volume create friction at higher volume. The system needs engineering, not more spend.",
+    name: "Digital Marketing",
+    subtitle: "Get the right customers finding you online",
+    situation: "You're invisible on Google. Your competitors are showing up first. You've tried ads before but they brought clicks, not customers. You know people are searching for what you offer, but they're finding someone else.",
     installs: [
-      {
-        label: "Stage 04",
-        title: "Traffic Scaling Protocols",
-        description:
-          "Build traffic systems that maintain efficiency at 2x, 5x, 10x spend. Platform-agnostic, algorithm-resistant.",
-      },
-      {
-        label: "Stages 05-06",
-        title: "Conversion Optimization",
-        description:
-          "Diagnose and fix the conversion drops that appear at scale. Rebuild capture and nurture for higher volume.",
-      },
-      {
-        label: "Stage 07",
-        title: "Sales System Engineering",
-        description:
-          "Systematize the sales process so it works beyond the founder. Scripts, qualification criteria, handoff protocols.",
-      },
-      {
-        label: "Stage 08",
-        title: "Retention Architecture",
-        description:
-          "Install retention systems that compound growth. LTV optimization, referral infrastructure, expansion revenue.",
-      },
+      { label: "Google Ads", title: "Ads that bring in real customers", description: "We set up and manage campaigns that target people actively searching for your services. You only pay when someone clicks." },
+      { label: "SEO", title: "Show up when people search for you", description: "We optimise your website so it ranks higher in Google search results. More visibility means more customers, without paying per click." },
+      { label: "Targeting", title: "Reach the right people in your area", description: "We target by location, demographics, and buying intent. Your ads reach people who actually need what you offer, right where you operate." },
+      { label: "Tracking", title: "Know exactly what every dollar returns", description: "Full reporting on leads, costs, and ROI. No guesswork. You'll see exactly how much each new customer costs and what they're worth." },
     ],
-    bestFor:
-      "Service businesses at $25K–$50K/month with existing lead flow that needs to scale profitably without breaking.",
+    bestFor: "Businesses with a solid website that need more customers coming through the door. Results typically start within 2-4 weeks.",
   },
   {
-    id: "expand",
+    id: "lead-capture",
     number: "03",
-    name: "Expand",
-    subtitle: "Market Expansion — $50K+/mo businesses",
-    situation:
-      "Your core acquisition system works. Growth in your primary market is predictable. But expanding to new service lines, verticals, or geographic markets has been inconsistent or failed.",
-    bottleneck:
-      "What works in one market doesn't automatically translate. Different buyer behavior, different competitive dynamics, different trust signals. Your system needs adaptation, not duplication.",
-    installs: null,
-    installSummary:
-      "Multi-channel acquisition architecture. We adapt your Revenue Engine for new markets — repositioned offers, market-specific creative, channel-appropriate traffic, and aligned sales processes. Same system DNA. Different market expression.",
-    bestFor:
-      "Businesses at $50K+/month with a proven core system ready to expand into new verticals, service lines, or markets.",
+    name: "Lead Capture",
+    subtitle: "Stop losing customers to slow follow-up",
+    situation: "Enquiries come in at all hours. You can't respond fast enough. Good leads go cold because there's no system. You're answering the same questions over and over and still losing prospects to competitors who responded first.",
+    installs: [
+      { label: "Instant response", title: "Every lead gets a reply in under 2 minutes", description: "Automated responses acknowledge every enquiry instantly, 24/7. Evenings, weekends, holidays. No lead ever waits." },
+      { label: "Qualification", title: "Talk to serious buyers first", description: "Automated questions filter leads by budget, timeline, and fit. You spend your time on the ones most likely to buy." },
+      { label: "Follow-up", title: "Automatic nurture sequences", description: "Leads who aren't ready to buy today get followed up with automatically via email and SMS. When they're ready, you're top of mind." },
+      { label: "CRM", title: "One simple place for all your leads", description: "A CRM that actually makes sense. See every lead, where they came from, and what stage they're at. No complicated software." },
+    ],
+    bestFor: "Businesses already getting leads but losing too many to slow response times or inconsistent follow-up.",
   },
   {
-    id: "overhaul",
+    id: "automation",
     number: "04",
-    name: "Overhaul",
-    subtitle: "Full System Rebuild — $50K–$100K+/mo businesses",
-    situation:
-      "You've hired agencies. You've tried freelancers. You've built internal teams. Nothing compounds. The acquisition layer of your business is a patchwork of disconnected experiments from different eras.",
-    bottleneck:
-      "There's no single failure point because the stages were never designed to work together. Fixing individual pieces won't work. The whole system needs rebuilding from first principles.",
-    installs: null,
-    installSummary:
-      "Complete acquisition system rebuild across all 8 stages of the Revenue Engine. Offer → Market → Creative → Traffic → Capture → Nurture → Sales → Retention. Engineered as one connected system from scratch.",
-    bestFor:
-      "Established businesses at $50K–$100K+/month that have outgrown their patchwork acquisition and need a clean, engineered system.",
+    name: "Automation",
+    subtitle: "Get your time back and scale without more staff",
+    situation: "Your team spends hours on repetitive tasks that could run themselves. Everything depends on you personally. You can't take a holiday without the business suffering. Growth means hiring more people for work that a computer could handle.",
+    installs: [
+      { label: "AI", title: "AI handles common customer questions", description: "Frequently asked questions, booking confirmations, status updates. AI responds instantly and accurately, freeing your team for real work." },
+      { label: "Workflows", title: "Automate repetitive tasks", description: "Invoice reminders, appointment confirmations, review requests, internal notifications. Tasks that eat up hours every week now run on autopilot." },
+      { label: "Consistency", title: "Same great service every time", description: "Automated processes deliver consistent service regardless of who's working or how busy you are. Quality doesn't dip when things get hectic." },
+      { label: "Reporting", title: "Know what's happening without asking", description: "Automatic reports on leads, revenue, team activity, and customer satisfaction. The numbers you need, delivered to your inbox." },
+    ],
+    bestFor: "Businesses with 10+ employees looking to scale without proportionally increasing headcount.",
   },
 ];
 
@@ -128,32 +78,28 @@ export default function RoutesPage() {
       <section className="pt-32 pb-12">
         <div className="container-narrow">
           <RevealOnScroll>
-            <CheckpointHeader label="Packages" />
+            <CheckpointHeader label="Services" />
             <SectionHeading as="h1" size="hero">
-              Matched to your stage. Built for what&rsquo;s next.
+              Everything your business needs to win online.
             </SectionHeading>
             <p className="text-xl leading-relaxed text-slate-300 font-medium mb-8">
-              Your current revenue determines what needs building first. We
-              don&rsquo;t sell generic retainers &mdash; we install the specific
-              acquisition infrastructure your business is missing.
+              Most businesses need more than just a website. They need the
+              whole system: the site, the marketing, the lead capture, and
+              the automation to tie it all together.
             </p>
           </RevealOnScroll>
         </div>
       </section>
 
-      {/* Routes */}
-      {routes.map((route) => (
-        <section
-          key={route.id}
-          id={route.id}
-          className="py-20 border-t border-navy-800"
-        >
+      {/* Services */}
+      {services.map((service) => (
+        <section key={service.id} id={service.id} className="py-20 border-t border-navy-800">
           <div className="container-narrow">
             <RevealOnScroll>
-              <CheckpointHeader label={`Package ${route.number}`} />
-              <SectionHeading>{route.name}</SectionHeading>
+              <CheckpointHeader label={`Service ${service.number}`} />
+              <SectionHeading>{service.name}</SectionHeading>
               <p className="text-xl leading-relaxed text-navy-300 font-medium -mt-4 mb-8">
-                {route.subtitle}
+                {service.subtitle}
               </p>
 
               <div className="w-10 h-0.5 bg-navy-700 my-8" />
@@ -161,50 +107,37 @@ export default function RoutesPage() {
               <div className="grid gap-10 mt-8">
                 <div>
                   <p className="block text-sm font-semibold text-accent mb-2 uppercase tracking-widest">
-                    The Situation
+                    The problem
                   </p>
-                  <BodyCopy>{route.situation}</BodyCopy>
+                  <BodyCopy>{service.situation}</BodyCopy>
                 </div>
 
                 <div>
                   <p className="block text-sm font-semibold text-accent mb-2 uppercase tracking-widest">
-                    The Bottleneck
+                    What you get
                   </p>
-                  <BodyCopy>{route.bottleneck}</BodyCopy>
+                  <div className="grid gap-8 mt-4">
+                    {service.installs.map((item) => (
+                      <ResultItem
+                        key={item.label}
+                        label={item.label}
+                        title={item.title}
+                        description={item.description}
+                      />
+                    ))}
+                  </div>
                 </div>
 
                 <div>
                   <p className="block text-sm font-semibold text-accent mb-2 uppercase tracking-widest">
-                    What We Install
+                    Best for
                   </p>
-                  {route.installs ? (
-                    <div className="grid gap-8 mt-4">
-                      {route.installs.map((item) => (
-                        <ResultItem
-                          key={item.label}
-                          label={item.label}
-                          title={item.title}
-                          description={item.description}
-                        />
-                      ))}
-                    </div>
-                  ) : (
-                    <BodyCopy secondary>
-                      {(route as any).installSummary}
-                    </BodyCopy>
-                  )}
-                </div>
-
-                <div>
-                  <p className="block text-sm font-semibold text-accent mb-2 uppercase tracking-widest">
-                    Best For
-                  </p>
-                  <BodyCopy secondary>{route.bestFor}</BodyCopy>
+                  <BodyCopy secondary>{service.bestFor}</BodyCopy>
                 </div>
               </div>
 
               <div className="mt-10">
-                <Button href="/apply">Apply for {route.name}</Button>
+                <Button href="/apply">Get started with {service.name.toLowerCase()}</Button>
               </div>
             </RevealOnScroll>
           </div>
@@ -215,14 +148,15 @@ export default function RoutesPage() {
       <section className="py-20 border-t border-navy-800 bg-navy-900">
         <div className="container-narrow">
           <RevealOnScroll>
-            <SectionHeading>Not sure which package?</SectionHeading>
+            <SectionHeading>Not sure what you need?</SectionHeading>
             <BodyCopy secondary>
-              That&rsquo;s exactly what the free diagnosis call is for.
-              We&rsquo;ll map your Revenue Engine, identify the specific
-              bottleneck, and recommend the right package for your situation.
+              That's what the free audit is for. We'll look at your current
+              online presence, tell you what's working, what's not, and give
+              you a clear plan. No obligation. No tech jargon. Just straight
+              answers.
             </BodyCopy>
             <div className="mt-8">
-              <Button href="/apply">Book Your Free Diagnosis</Button>
+              <Button href="/apply">Get your free website audit</Button>
             </div>
           </RevealOnScroll>
         </div>

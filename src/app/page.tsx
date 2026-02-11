@@ -19,20 +19,19 @@ export default function HomePage() {
         <div className="container-narrow">
           <RevealOnScroll>
             <p className="text-sm text-accent mb-6 tracking-wide font-semibold uppercase">
-              Acquisition systems for agencies, coaches &amp; consultants
+              Websites. Marketing. Automation. Done for you.
             </p>
             <SectionHeading as="h1" size="hero">
-              Stop chasing leads. Start engineering revenue.
+              Your business is great. Your online presence should be too.
             </SectionHeading>
             <p className="text-xl leading-relaxed text-slate-300 font-medium mb-10">
-              We install complete acquisition systems for service businesses
-              scaling from $10K to $100K/month. Not campaigns. Not freelancers.
-              A single connected infrastructure that produces booked calls on
-              repeat.
+              We help established businesses get found online, bring in more
+              customers, and stop wasting time on things that should run
+              themselves. One partner. One system. Real results you can measure.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button href="/apply">Get Your Free Diagnosis</Button>
-              <Button href="#diagnosis" variant="secondary">
+              <Button href="/apply">Get your free website audit</Button>
+              <Button href="#how-it-works" variant="secondary">
                 See how it works
               </Button>
             </div>
@@ -40,159 +39,73 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== CHECKPOINT 01 — DIAGNOSIS ===== */}
-      <section id="diagnosis" className="py-20 border-t border-navy-800">
-        <div className="container-narrow">
-          <RevealOnScroll>
-            <CheckpointHeader label="Step 01 · The Problem" />
-            <SectionHeading>
-              Your acquisition is broken in a way that more marketing
-              can&rsquo;t fix.
-            </SectionHeading>
-            <BodyCopy>
-              Most agency owners treat growth as a series of disconnected
-              activities. They hire an ads manager. Then a funnel builder. Then a
-              closer. Each person optimizes their piece in isolation.
-            </BodyCopy>
-            <BodyCopy>
-              The result? A patchwork of tactics that never compounds. Spend goes
-              up, but booked calls don&rsquo;t follow. You&rsquo;re buying
-              activity, not building infrastructure.
-            </BodyCopy>
-            <PatternBlock
-              label="The Real Issue"
-              text="The constraint is never volume. The constraint is sequence. Every revenue leak traces back to a missing or misaligned stage in your acquisition process."
-            />
-          </RevealOnScroll>
-
-          <RevealOnScroll>
-            <h3 className="font-display text-2xl font-bold text-white mt-16 mb-6">
-              The Revenue Engine &mdash; 8 Connected Stages
-            </h3>
-            <BodyCopy secondary>
-              Every sale your business makes passes through these 8 stages.
-              Break one link, everything downstream fails. This is the system we
-              diagnose, build, and scale.
-            </BodyCopy>
-
-            <div className="flex flex-wrap gap-3 my-12">
-              <Stage number="01" label="Offer" />
-              <Stage number="02" label="Market" />
-              <Stage number="03" label="Creative" />
-              <Stage number="04" label="Traffic" />
-              <Stage number="05" label="Capture" />
-              <Stage number="06" label="Nurture" />
-              <Stage number="07" label="Sales" />
-              <Stage number="08" label="Retention" showArrow={false} />
-            </div>
-
-            <BodyCopy secondary className="mt-8">
-              Most businesses only focus on stages 03&ndash;04. They throw money
-              at ads and funnels without fixing their offer or nurture. They
-              wonder why nothing scales.
-            </BodyCopy>
-          </RevealOnScroll>
-        </div>
-      </section>
-
-      {/* ===== PROBLEM SECTION ===== */}
+      {/* ===== THE PROBLEM ===== */}
       <section className="py-20 border-t border-navy-800">
         <div className="container-narrow">
           <RevealOnScroll>
+            <CheckpointHeader label="Sound familiar?" />
             <SectionHeading>
-              You&rsquo;re good at what you do. But growth still feels like
-              gambling.
+              You run a great business. But online? It feels like guesswork.
             </SectionHeading>
+            <BodyCopy>
+              You know you need to be online. But between running your team,
+              keeping customers happy, and handling everything else, who has
+              time to figure out websites, ads, and marketing?
+            </BodyCopy>
             <BodyCopy secondary>
-              Your service delivers results. Your clients are happy. But
-              predictable revenue? That&rsquo;s a different story.
+              Maybe you tried a web designer who disappeared halfway through.
+              Maybe you spent money on ads that brought clicks but no
+              customers. Maybe you have a website, but nobody actually finds
+              it.
             </BodyCopy>
           </RevealOnScroll>
 
           <RevealOnScroll>
             <div className="grid gap-8 my-12">
               <ResultItem
-                label="Symptom #1"
-                title="Revenue rollercoaster"
-                description="One month you close $40K. Next month $12K. There's no baseline, no predictability, no way to plan hiring or investment. Every month is a coin flip."
+                label="Problem #1"
+                title={'"I know I need a website but don\'t know where to start"'}
+                description="You're overwhelmed by options. DIY platforms, freelancers, agencies. Every option feels like a gamble. And the last thing you need is another project that drags on for months."
               />
               <ResultItem
-                label="Symptom #2"
-                title="You ARE the sales team"
-                description="Every deal runs through you. Your network, your reputation, your time. The business can't grow past your personal capacity. Take a week off and the pipeline dries up."
+                label="Problem #2"
+                title={'"I have a website but nobody finds it"'}
+                description="You spent money on a site and it just sits there. Your competitors show up on Google. You don't. Customers are searching for what you offer right now, and they're finding someone else."
               />
               <ResultItem
-                label="Symptom #3"
-                title="Agencies haven't worked"
-                description="You've tried paid ads agencies, appointment setters, cold email teams. Some generated leads, none built a system. The moment you stop paying, the leads stop too."
+                label="Problem #3"
+                title={'"Leads come in but I can\'t keep up"'}
+                description="Enquiries arrive at all hours. You can't respond fast enough. Good leads go cold because there's no follow-up system. You're answering the same questions over and over."
+              />
+              <ResultItem
+                label="Problem #4"
+                title={'"I\'m stuck doing everything myself"'}
+                description="Your team spends hours on repetitive tasks. Everything depends on you personally. You can't take a week off without the business suffering. Scaling feels impossible."
               />
             </div>
           </RevealOnScroll>
 
           <RevealOnScroll>
             <PatternBlock
-              label="What This Really Means"
-              text="These aren't marketing problems. They're infrastructure problems. You don't need another campaign. You need an acquisition engine that runs whether you're working or not."
+              label="The real issue"
+              text="You don't need another agency that overpromises and underdelivers. You need a complete system that works together: a website that converts, marketing that brings the right people, and automation that handles the rest."
             />
           </RevealOnScroll>
         </div>
       </section>
 
-      {/* ===== CHECKPOINT 02 — PACKAGES ===== */}
-      <section id="routes" className="py-20 border-t border-navy-800">
+      {/* ===== HOW IT WORKS ===== */}
+      <section id="how-it-works" className="py-20 border-t border-navy-800">
         <div className="container-narrow">
           <RevealOnScroll>
-            <CheckpointHeader label="Step 02 · Your Starting Point" />
+            <CheckpointHeader label="How it works" />
             <SectionHeading>
-              Four packages. Matched to where you are right now.
+              Four stages. One complete system.
             </SectionHeading>
             <BodyCopy secondary>
-              Your current revenue stage determines what needs building first. We
-              don&rsquo;t sell one-size-fits-all retainers. We install the
-              specific infrastructure your business is missing.
-            </BodyCopy>
-          </RevealOnScroll>
-
-          <RevealOnScroll>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
-              <PathCard
-                name="Launchpad"
-                subtitle="$10K–$25K/mo businesses"
-                bottleneck="No acquisition system exists. You're living on referrals and personal outreach. Revenue disappears when you stop selling."
-                installs="Offer positioning, ideal client targeting, ad creative systems, and conversion funnel. Your first real acquisition engine."
-              />
-              <PathCard
-                name="Accelerate"
-                subtitle="$25K–$50K/mo businesses"
-                bottleneck="You have some lead flow, but it's inconsistent. Conversion rates drop when you try to scale. Unit economics break at higher spend."
-                installs="Traffic scaling systems, conversion optimization, automated nurture sequences, and sales process engineering. Scale without breaking."
-              />
-              <PathCard
-                name="Expand"
-                subtitle="$50K–$75K/mo businesses"
-                bottleneck="Domestic acquisition works. But expanding to new markets or channels has stalled. Growth has plateaued."
-                installs="Multi-channel acquisition architecture, market expansion playbooks, and advanced retention systems. New revenue streams, proven framework."
-              />
-              <PathCard
-                name="Overhaul"
-                subtitle="$50K–$100K+/mo businesses"
-                bottleneck="You've hired agencies, freelancers, internal teams. Nothing compounds. The entire acquisition layer is a patchwork of disconnected experiments."
-                installs="Complete system rebuild across all 8 stages. Clean slate. Engineered properly from offer to retention as one connected machine."
-              />
-            </div>
-          </RevealOnScroll>
-        </div>
-      </section>
-
-      {/* ===== CHECKPOINT 03 — HOW IT WORKS ===== */}
-      <section id="method" className="py-20 border-t border-navy-800">
-        <div className="container-narrow">
-          <RevealOnScroll>
-            <CheckpointHeader label="Step 03 · How We Build It" />
-            <SectionHeading>Four phases. One system.</SectionHeading>
-            <BodyCopy secondary>
-              Every engagement follows the same structure. The sequence is
-              non-negotiable because each phase depends on the one before it.
+              We don't just build you a website and wish you luck. We build
+              the entire engine that brings customers to your door and keeps
+              them coming back.
             </BodyCopy>
           </RevealOnScroll>
 
@@ -200,27 +113,27 @@ export default function HomePage() {
             <div className="grid gap-8 my-12">
               <Phase
                 number="01"
-                title="Diagnosis"
-                description="We audit your entire acquisition process — all 8 stages. We find the exact point of failure: where leads leak, where conversions drop, where money is wasted. You get a complete system map before we build anything."
-                warning="If skipped: You build on assumptions. Assumptions compound into expensive mistakes."
+                title="Build your online foundation"
+                description="We build you a professional website that looks credible, loads fast, works perfectly on phones, and makes it dead simple for customers to contact you or book. Set up in weeks, not months."
+                warning="This is where it all starts. Without a solid website, everything else is wasted."
               />
               <Phase
                 number="02"
-                title="System Build"
-                description="We design and install your acquisition infrastructure. Offer architecture. Market targeting. Creative systems. Funnel engineering. Traffic protocols. Every component connects to every other component."
-                warning="If skipped: You get disconnected activities, not a system. Each piece optimizes alone and fails together."
+                title="Get customers finding you"
+                description="We run ads that bring in actual customers, not just clicks. We make sure you show up when people search for what you offer. Every dollar is tracked so you know exactly what's working."
+                warning="No more guessing. You'll see exactly how much each new customer costs and what they're worth."
               />
               <Phase
                 number="03"
-                title="Stabilization"
-                description="The system goes live. Real data flows. We calibrate conversion rates, cost per acquisition, and pipeline velocity until we hit a stable, repeatable baseline."
-                warning="If skipped: You scale instability. Costs spiral, lead quality drops, your team burns out."
+                title="Never miss a lead again"
+                description="Every enquiry gets an instant response, 24/7. Leads are automatically qualified so you only talk to serious buyers. Follow-up happens on autopilot. Nothing falls through the cracks."
+                warning="Most businesses lose 40-60% of leads just from slow follow-up. We fix that completely."
               />
               <Phase
                 number="04"
-                title="Scaling"
-                description="Once the baseline is stable, we increase volume methodically. Every dollar of additional spend is measured against output. No vanity metrics. No guesswork."
-                warning="If skipped: There is no skip. You can't scale what isn't stable."
+                title="Run your business on autopilot"
+                description="We automate the repetitive tasks your team does every day. AI handles common customer questions. Workflows run in the background saving hours every week. You focus on the work that matters."
+                warning="This is where you get your time back. And where your business starts scaling without needing more of you."
               />
             </div>
           </RevealOnScroll>
@@ -228,25 +141,73 @@ export default function HomePage() {
           <RevealOnScroll>
             <div className="w-10 h-0.5 bg-navy-700 my-12" />
             <BodyCopy>
-              Diagnosis before build. Build before stabilization. Stabilization
-              before scaling. This is what separates a revenue engine from a
-              marketing expense.
+              Each stage builds on the last. Your website converts visitors.
+              Your marketing brings the right visitors. Your lead system
+              captures them. Your automation keeps everything running. It all
+              works together.
             </BodyCopy>
           </RevealOnScroll>
         </div>
       </section>
 
-      {/* ===== CHECKPOINT 04 — QUALIFICATION ===== */}
+      {/* ===== SERVICES OVERVIEW ===== */}
+      <section id="services" className="py-20 border-t border-navy-800">
+        <div className="container-narrow">
+          <RevealOnScroll>
+            <CheckpointHeader label="What you get" />
+            <SectionHeading>
+              Pick where you need help. Or let us handle the lot.
+            </SectionHeading>
+            <BodyCopy secondary>
+              Most of our clients start with a website and marketing, then
+              add lead capture and automation as they grow. You can start
+              wherever makes sense for your business.
+            </BodyCopy>
+          </RevealOnScroll>
+
+          <RevealOnScroll>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
+              <PathCard
+                name="Website"
+                subtitle="Your online foundation"
+                bottleneck="Your current site is outdated, slow, or doesn't exist. Customers can't find you or don't trust what they see."
+                installs="Professional website that makes you look credible. Mobile-friendly, fast, with a clear message about what you do and why customers should pick you. Easy to contact or book."
+              />
+              <PathCard
+                name="Marketing"
+                subtitle="Get customers finding you"
+                bottleneck="You're invisible on Google. Competitors are getting the customers who should be yours. Ads you've tried haven't worked."
+                installs="Ads that bring in real customers. Search visibility so you show up first. Targeting for your area and your ideal customer. Full tracking so you know what every dollar returns."
+              />
+              <PathCard
+                name="Lead Capture"
+                subtitle="Never miss an opportunity"
+                bottleneck="Leads come in at all hours and go cold before you can respond. No system for follow-up. Good prospects slip away."
+                installs="Instant response to every enquiry, 24/7. Automatic qualification so you talk to serious buyers first. Follow-up that runs itself. A simple CRM that actually makes sense."
+              />
+              <PathCard
+                name="Automation"
+                subtitle="Get your time back"
+                bottleneck="Your team is buried in repetitive work. Everything depends on you. Scaling means hiring more people for tasks a computer could do."
+                installs="AI handles common customer questions. Repetitive tasks run automatically. Streamlined workflows that save hours every week. Consistent service even as you grow."
+              />
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* ===== QUALIFICATION ===== */}
       <section id="qualification" className="py-20 border-t border-navy-800">
         <div className="container-narrow">
           <RevealOnScroll>
-            <CheckpointHeader label="Step 04 · Is This For You?" />
-            <SectionHeading>This is not for everyone.</SectionHeading>
+            <CheckpointHeader label="Is this for me?" />
+            <SectionHeading>
+              We work best with businesses like these.
+            </SectionHeading>
             <BodyCopy secondary>
-              We&rsquo;re selective about who we work with. Not out of arrogance
-              &mdash; out of integrity. These systems require specific conditions
-              to succeed. If the fit isn&rsquo;t right, we&rsquo;ll tell you
-              upfront.
+              We're not for everyone. We work with established businesses
+              that are already good at what they do. You don't need us to
+              fix your service. You need us to make sure more people find it.
             </BodyCopy>
           </RevealOnScroll>
 
@@ -254,31 +215,31 @@ export default function HomePage() {
             <div className="grid gap-8 my-12">
               <Requirement
                 number="01"
-                title="Revenue: $10K+/month"
-                value="You need cash flow to sustain a system build"
-                reason="Acquisition infrastructure takes 60–90 days to mature. You need runway to get through the build and stabilization phases without panic."
-                missing="If missing: You'll pull the plug before the system has time to work."
+                title="You have an established business"
+                value="10+ employees, real revenue, proven service"
+                reason="You're already good at what you do. Your customers are happy. You just need more of the right people finding you online."
+                missing=""
               />
               <Requirement
                 number="02"
-                title="Delivery: proven and repeatable"
-                value="Your clients get results consistently"
-                reason="We build the pipeline. If your service can't convert that pipeline into happy, retained clients, the system breaks downstream."
-                missing="If missing: More leads amplifies a delivery problem. Fix that first."
+                title="You're too busy to figure out marketing"
+                value="You want results, not a to-do list"
+                reason="You don't have time to learn Google Ads or build funnels. You want someone to handle it and show you what's working."
+                missing=""
               />
               <Requirement
                 number="03"
-                title="Decision-maker: involved"
-                value="Founder or CEO on the calls"
-                reason="Acquisition infrastructure touches positioning, pricing, sales process, and client experience. These are leadership decisions, not marketing decisions."
-                missing="If missing: Decisions stall. Build timelines collapse. Nothing ships."
+                title="You've been burned before"
+                value="Web designers who vanished. Ads that didn't work."
+                reason="You're skeptical of agencies. Good. We track everything, show you real numbers, and don't lock you into long contracts."
+                missing=""
               />
               <Requirement
                 number="04"
-                title="Mindset: systems over hacks"
-                value="You want infrastructure, not a quick fix"
-                reason="If you need 10 leads by Friday, this isn't the right approach. We build machines, not campaigns."
-                missing="If missing: Misaligned expectations create friction that kills systems before they mature."
+                title="You want a partner, not a vendor"
+                value="Someone who understands your business"
+                reason="We're not here to sell you a website and disappear. We build systems that grow with you and we stick around to make sure they work."
+                missing=""
               />
             </div>
           </RevealOnScroll>
@@ -286,21 +247,21 @@ export default function HomePage() {
           <RevealOnScroll>
             <div className="w-10 h-0.5 bg-navy-700 my-12" />
             <h3 className="font-display text-2xl font-bold text-white mb-6">
-              Not the right fit if:
+              Industries we work with
             </h3>
             <ul className="space-y-0">
               {[
-                "You're under $10K/month (not enough runway to sustain the build)",
-                "You want overnight results (systems take 60–90 days to mature)",
-                "You want to micromanage every ad and email (trust the process or it won't work)",
-                "Your service doesn't reliably deliver results (we scale what works, we don't fix what's broken)",
-                "You think \"more ads\" is a growth strategy (it's not — it's a scaling tactic for stage 04 only)",
+                "Professional services (accountants, lawyers, consultants)",
+                "Home services (plumbers, electricians, HVAC, landscaping)",
+                "Healthcare (dental practices, physio clinics, medical offices)",
+                "Local retail and hospitality",
+                "B2B service providers",
               ].map((item) => (
                 <li
                   key={item}
                   className="py-3 border-b border-navy-800 text-base text-navy-300 flex gap-3 items-baseline"
                 >
-                  <span className="text-navy-600 flex-shrink-0">&ndash;</span>
+                  <span className="text-accent flex-shrink-0">+</span>
                   {item}
                 </li>
               ))}
@@ -314,23 +275,23 @@ export default function HomePage() {
         <div className="container-narrow">
           <RevealOnScroll>
             <p className="text-xs font-semibold tracking-label uppercase text-accent mb-8">
-              Client Results
+              What our clients say
             </p>
             <div>
               <Testimonial
-                text="We'd burned through three agencies before Scale.digital. None of them thought in systems. Within 90 days we had a predictable pipeline for the first time in two years. Our revenue went from $45K to $120K/month."
-                author="Alex M."
-                role="CEO, Growth Consultancy"
+                text="We put off getting a proper website for years. Scale.digital had us live in three weeks and within two months we were getting 30+ enquiries a month from Google alone. Should have done this years ago."
+                author="Mark T."
+                role="Owner, Commercial Plumbing Company"
               />
               <Testimonial
-                text="They told us our offer was wrong. We didn't want to hear it. But we fixed it, and everything changed. Cost per acquisition dropped 60%. Close rate doubled. This is what actual systems thinking looks like."
-                author="Sarah K."
-                role="Founder, Digital Agency"
+                text="We were spending $3,000 a month on ads with nothing to show for it. They rebuilt everything. Same budget, but now we track every lead. Last month we got 47 qualified enquiries at $64 each."
+                author="Rachel S."
+                role="Practice Manager, Dental Clinic"
               />
               <Testimonial
-                text="The diagnosis alone was worth it. They mapped our entire acquisition process and found three stages where we were losing 40% of potential clients. No one had ever shown us that before."
-                author="James R."
-                role="Director, B2B Services"
+                text="The automation alone saves our office manager 15 hours a week. Every lead gets a response in under 2 minutes, even at midnight. Our conversion rate doubled because we stopped losing people to slow follow-up."
+                author="David L."
+                role="Director, Accounting Firm"
               />
             </div>
           </RevealOnScroll>
@@ -342,35 +303,31 @@ export default function HomePage() {
         <div className="container-narrow">
           <RevealOnScroll>
             <SectionHeading>
-              Find out exactly where your acquisition breaks.
+              See what your business looks like online. For free.
             </SectionHeading>
             <BodyCopy>
-              Every engagement starts with a free diagnosis call. We map your
-              Revenue Engine, identify the specific failure point, and show you
-              exactly what needs to be built. No pitch. No pressure.
-            </BodyCopy>
-            <BodyCopy secondary>
-              If we can help, we&rsquo;ll tell you how. If we can&rsquo;t,
-              we&rsquo;ll tell you that too. Either way, you leave the call with
-              clarity you didn&rsquo;t have before.
+              We'll audit your current online presence, show you exactly
+              where you're losing customers, and give you a clear plan to
+              fix it. No jargon. No pressure. Just honest advice about what
+              will actually move the needle for your business.
             </BodyCopy>
 
             <div className="flex flex-wrap items-center gap-3 my-10 text-base font-medium text-slate-300">
-              <span>Apply</span>
+              <span>Free audit</span>
               <span className="text-navy-600">&rarr;</span>
-              <span>Free Diagnosis Call</span>
+              <span>15-min strategy call</span>
               <span className="text-navy-600">&rarr;</span>
-              <span>System Proposal</span>
+              <span>Clear action plan</span>
               <span className="text-navy-600">&rarr;</span>
-              <span>Build Begins</span>
+              <span>We build it</span>
             </div>
 
             <div className="mt-10">
-              <Button href="/apply">Book Your Free Diagnosis</Button>
+              <Button href="/apply">Get your free website audit</Button>
             </div>
             <p className="text-sm text-navy-400 mt-6">
-              Limited availability. We take on a maximum of 8 new clients per
-              quarter.
+              Takes 30 seconds to apply. We'll get back to you within 24
+              hours.
             </p>
           </RevealOnScroll>
         </div>
