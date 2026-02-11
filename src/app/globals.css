@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-gray-900 bg-white;
+  }
+
+  ::selection {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply max-w-content mx-auto px-5 md:px-6;
+  }
+
+  .container-wide {
+    @apply max-w-wide mx-auto px-5 md:px-6;
+  }
+}
