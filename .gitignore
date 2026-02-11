@@ -1,1 +1,28 @@
-# Dependencies\nnode_modules/\n\n# Next.js\n.next/\nout/\n\n# Build\nbuild/\ndist/\n\n# Debug\nnpm-debug.log*\n\n# Env\n.env\n.env.*\n!.env.example\n\n# OS\n.DS_Store\nThumbs.db\n\n# IDE\n.vscode/\n.idea/\n*.swp\n*.swo
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Build
+build/
+dist/
+
+# Debug
+npm-debug.log*
+
+# Env
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
